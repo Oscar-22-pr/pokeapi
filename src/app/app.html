@@ -1,5 +1,10 @@
-<h1> POKEMONS</h1>
-<ul *ngFor="let personaje of personajes">
-  <li> {{personaje.name}}</li>
-</ul>
+<h1>POKEMONS</h1>
+<div class="grid-container">
+  <div *ngFor="let p of personajes" class="card">
+    <div class="img-container">
+      <img [src]="p.sprites.other['official-artwork'].front_default || p.sprites.front_default" [alt]="p.name">
+    </div>
+    <h3>{{ p.name }}</h3>
+  </div>
+</div>
 <router-outlet />

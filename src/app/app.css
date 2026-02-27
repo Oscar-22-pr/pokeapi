@@ -1,0 +1,74 @@
+/* Importar una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+:host {
+  font-family: 'Outfit', sans-serif;
+  display: block;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #2d3436;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contenedor Responsivo */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta Estilo Moderno */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Animación al pasar el mouse */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+/* Estilo de la imagen */
+.card img {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Nombre del Pokemon */
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #2d3436;
+  font-weight: 500;
+  background: #f0f2f5;
+  padding: 5px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}

@@ -13,5 +13,7 @@ export class Data {
   obtenerPokemons(){
     return this.http.get<any>(this.urlbase);
   }
-
+  getPokemonDetails(url: string) {
+    return this.http.get(url);
+  }
 }
